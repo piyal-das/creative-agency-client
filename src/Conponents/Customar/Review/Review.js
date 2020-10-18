@@ -14,7 +14,7 @@ const Review = () => {
     const { register, handleSubmit, errors } = useForm();
     const onSubmit = data =>{
         data.email = `${loggedInUser.email}` ;
-        fetch('http://localhost:8080/addReview', {
+        fetch('https://boiling-retreat-75550.herokuapp.com/addReview', {
             method : 'POST',
             headers : {
                 'Content-Type' : 'application/json'
